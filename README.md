@@ -12,3 +12,23 @@
 | HQ-SRV         | ens 192  | 192.168.0.126  | /25           | 192.168.0.1      |
 | BR-SRV         | ens 192  | 192.168.0.130| /27           | 192.168.0.129    |
 ## Установка Docker
+# Обновил список пакетов
+'''
+apt-get update
+'''
+# Установил утилиту Docker
+'''
+apt-get install -y docker-engine
+'''
+# Добавил утилиту в автозагрузку
+'''
+systemctl enable --now docker
+'''
+# Установил контейнер hello-world
+'''
+docker run hello-world
+'''
+# Удалил контейнер hello-world
+'''
+docker image rm -f hello-world
+'''
